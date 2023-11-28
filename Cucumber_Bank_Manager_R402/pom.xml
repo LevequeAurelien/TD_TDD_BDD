@@ -8,9 +8,23 @@
     <artifactId>Cucumber_Bank_Manager_R402</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <build>
+        <plugins>
+            <!-- ... autres plugins ... -->
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.9.0.2155</version> <!-- Utilisez la dernière version disponible -->
+            </plugin>
+        </plugins>
+    </build>
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <sonar.host.url>http://localhost:9000</sonar.host.url>
+        <sonar.login>sqp_2689a02875f9a3ed92a93314a3b6a7db19e2fbcc</sonar.login>
+
     </properties>
     <dependencies>
         <dependency>
